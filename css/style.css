@@ -51,7 +51,7 @@ body {
 	margin: 0px auto;
 	box-sizing: content-box;
 }
-._ibg {
+._ibg {  /*Картинка*/
 	position: relative;
 }
 ._ibg img {
@@ -75,7 +75,7 @@ body {
 	min-height: 104px;
 	align-items: center;
 }
-@media (max-width: 479px) {
+@media (max-width: 479px) {  /*уменьшение размера шапки*/
 	.header__container {
 		min-height: 70px;
 	}
@@ -122,13 +122,105 @@ body {
 }
 
 /* ---PAGE------------------------------------------------------------------------- */
+.page {
+	flex: 1 1 auto;   /* прибить футер вниз*/
+}
+.page__main-block {
 
-
-
-/* ---HEADER-BLOCK------------------------------------------------------------------------- */
+}
 
 /* ---ПОДВАЛ------------------------------------------------------------------------- */
 .footer {
+
 }
 /* ---MAIN-BLOCK------------------------------------------------------------------------- */
+.main-block {
+	position: relative;
+}
+.main-block__container {
+}
+.main-block__body {
+	padding: 184px 0 191px 0;
+	position: relative;
+	z-index: 2;
+	max-width: 400px;
+}
+@media (max-width: 992px) {
+	.main-block__body {
+		padding: 120px 0 191px 0;
+	}
+}
+.main-block__body > *:not(:last-child) {   /*обращение ко всем объектам 1 уровня кроме последнего*/
+	margin: 0 0 35px 0;
+}
+.main-block__title {
+	font-size: 58px;
+	line-height: calc(80 / 58 *100%); /*80 line-height из шаблона / 58 размер шрифта*/
+	font-weight: 800;
+	letter-spacing: 0.2px;
+}
+@media (max-width: 479px) {
+	.main-block__title {
+		font-size: 42px;
+	}
+}
+.main-block__text {
+	color: #737373;
+	font-size: 20px;
+	line-height: 150%;
+}
+.main-block__buttons {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: -10px 0;
+}
+.main-block__button {
+	display: flex;
+	border-radius: 37px;
+	min-height: 48px;
+	justify-content: center;
+	text-align: center;	
+	align-items: center;
+	font-weight: 700;
+	line-height: 150%;
+	padding: 5px 36px;
+	letter-spacing: 0.2px;
+	margin: 10px 0;
+}
+@media (max-width: 479px) {
+	.main-block__button {
 
+		flex: 1 1 100%; /*увеличение кнопок*/
+	}
+}
+@media (min-width: 479px) {
+	.main-block__button:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+.main-block__button_orange {
+	background: #FF7B47;
+	color: #fff;
+}
+.main-block__button_border {
+	border: 1px solid #0D5C63;
+	color: #0D5C63;
+
+}
+.main-block__image{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+@media (max-width: 1300px) {
+	.main-block__image img {
+		object-position: right;
+	}
+}
+@media (max-width: 992px) {
+	.main-block__image img {
+		opacity: 0.5;
+	}
+}
