@@ -1,0 +1,134 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	background: #fafafa;
+	font-size: 14px;
+	color: #252b42;
+	font-weight: 500;
+	font-family: Montserrat;
+}
+/* ---------------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ---------------------------------------------------------------------------- */
+._container {
+	max-width: 1046px;
+	padding: 0px 15px;  /* чтобы не прилипало к экрну при уменьшении*/
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+._ibg {
+	position: relative;
+}
+._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover; 
+}
+/* ---ШАПКА------------------------------------------------------------------------- */
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+.header__container {
+	display: flex;
+	min-height: 104px;
+	align-items: center;
+}
+@media (max-width: 479px) {
+	.header__container {
+		min-height: 70px;
+	}
+}
+.header__logo {
+	font-size: 24px;
+	font-weight: 700;
+	color: inherit;
+}
+.header__menu {
+	margin: 0px 0px 0px 133px;
+}
+@media (max-width: 992px) {    /*уменьшаем при разрешении ниже 992px*/
+	.header__menu {
+		margin: 0 0 0 80px;
+	}
+}
+@media (max-width: 767px) {    /*уменьшаем при разрешении ниже 992px*/
+	.header__menu {
+		margin: 0 0 0 40px;
+	}
+}
+@media (max-width: 479px) {    /*уменьшаем при разрешении ниже 992px*/
+	.header__menu {
+		margin: 0 0 0 20px;
+		font-size: 18px;
+	}
+}
+.menu {
+	padding: 5px 0;  /*что бы меню не прилопало сверху снизу при уменьшении*/
+}
+.menu__list {
+	flex-wrap: wrap; /*позволяет ломаться флекс элементам пр. - меню в столбик*/
+	display: flex;
+}
+.menu__item:not(:last-child) {  /*отступ справа, кроме последнего*/
+	margin: 0 21px 0 0;
+	
+}
+.menu__link {
+	color: #737373;
+	font-weight: 600;
+	line-height: calc(24 / 14 * 100%);/*---171%----*/
+}
+
+/* ---PAGE------------------------------------------------------------------------- */
+
+
+
+/* ---HEADER-BLOCK------------------------------------------------------------------------- */
+
+/* ---ПОДВАЛ------------------------------------------------------------------------- */
+.footer {
+}
+/* ---MAIN-BLOCK------------------------------------------------------------------------- */
+
