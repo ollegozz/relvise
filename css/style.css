@@ -120,6 +120,11 @@ body {
 	font-weight: 600;
 	line-height: calc(24 / 14 * 100%);/*---171%----*/
 }
+@media (max-width: 479px) {
+	.menu__link {
+		color: #272626;
+	}
+}
 
 /* ---PAGE------------------------------------------------------------------------- */
 .page {
@@ -168,6 +173,11 @@ body {
 	color: #737373;
 	font-size: 20px;
 	line-height: 150%;
+}
+@media (max-width: 479px) {
+	.main-block__text {
+		color: #272626;
+	}
 }
 .main-block__buttons {
 	display: inline-flex;
