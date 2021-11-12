@@ -141,6 +141,9 @@ body {
 .page__advantages {
 
 }
+.page__practice {
+
+}
 /* ---HEADER-BLOCK------------------------------------------------------------------------ */
 
 .header-block {
@@ -402,4 +405,40 @@ body {
 	line-height: 150%;
 	letter-spacing: 0.1px;
 	color: #737373;
+}
+/*-----------PRACTICE-------------------------------*/
+.practice__icon {
+}
+
+.page__practice {
+}
+.practice {
+}
+.practice__container {
+}
+._container {
+}
+.practice__header {
+}
+.header-block {
+}
+.header-block__title {
+}
+.header-block__sub-title {
+}
+.practice__body {
+}
+.practice__column {
+}
+.practice__item {
+}
+.item-practice {
+}
+.item-practice__link {
+}
+.item-practice__title {
+}
+.practice__text {
+}
+.item-practice__image {
 }
