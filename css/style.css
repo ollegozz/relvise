@@ -407,38 +407,68 @@ body {
 	color: #737373;
 }
 /*-----------PRACTICE-------------------------------*/
-.practice__icon {
-}
-
-.page__practice {
-}
 .practice {
+	padding: 125px 0 80px 0;
 }
 .practice__container {
 }
-._container {
-}
 .practice__header {
-}
-.header-block {
-}
-.header-block__title {
-}
-.header-block__sub-title {
+	margin: 0 0 45px 0;
 }
 .practice__body {
+	margin: 0 -20px -30px;
+	display: flex;
+	flex-wrap: wrap;
+
 }
 .practice__column {
+	padding: 0 20px;
+	flex: 0 1 25%;
+}
+@media (max-width: 1040px) {
+	.practice__column {
+	flex: 0 1 50%;
+}
+}
+@media (max-width: 630px) {
+	.practice__column {
+	flex: 0 1 100%;
+}
 }
 .practice__item {
 }
 .item-practice {
+		background-color: #fff;
+}
+.item-practice__contenet{
+	padding: 30px;
 }
 .item-practice__link {
+	color: inherit;
+	display: inline-block;
+}
+..item-practice__link:hover{
+	text-decoration: underline;
+}
+.item-practice__link:not(:last-child) {
+	margin: 0 0 15px 0;
 }
 .item-practice__title {
+	letter-spacing: 0.1;
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 700;
+
 }
 .practice__text {
+	color: #737373;
+	letter-spacing: 0.1;
+	font-size: 14px;
+	line-height: 142%;
+	font-weight: 700;
+
 }
 .item-practice__image {
+	display: block;
+	padding: 0 0 60% 0; /*размер картинки 138/230*100 */
 }
