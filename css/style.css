@@ -144,6 +144,9 @@ body {
 .page__practice {
 
 }
+.page__whoweare {
+	
+}
 /* ---HEADER-BLOCK------------------------------------------------------------------------ */
 
 .header-block {
@@ -494,3 +497,37 @@ body {
 	padding: 0 0 60% 0; /*размер картинки 138/230*100 */
 }
 /*---------------------------------------------------*/
+.whoweare {
+	padding: 80px 0 130px 0;
+}
+.whoweare__container {
+}
+.whoweare__header {
+	padding: 0 0 100px 0;
+}
+.whoweare__body {
+	display: flex;
+	
+}
+.whoweare__video {
+}
+.whoweare__content {
+}
+.whoweare__title {
+}
+.whoweare__text {
+}
+.whoweare__items {
+}
+.whoweare__item {
+}
+.item-whoweare {
+}
+.item-whoweare__icon {
+}
+.item-whoweare__body {
+}
+.item-whoweare__title {
+}
+.item-whoweare__text {
+}
