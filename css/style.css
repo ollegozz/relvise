@@ -496,26 +496,46 @@ body {
 	display: block;
 	padding: 0 0 60% 0; /*размер картинки 138/230*100 */
 }
-/*---------------------------------------------------*/
+/*-------------WHOWEARE--------------------------------------*/
 .whoweare {
 	padding: 80px 0 130px 0;
 }
 .whoweare__container {
 }
 .whoweare__header {
-	padding: 0 0 100px 0;
+	padding: 0 0 100px 0;  /*TEST*/
 }
 .whoweare__body {
 	display: flex;
-	
+	padding: 100px 0 0 0;
 }
 .whoweare__video {
+	flex: 0 0 57%;   /*600 огранич размер видео контейнера  / 1046 контейнер  = 0,57*/
+	position: relative;
+	padding: 0 0 42.25% 0; /*442(размер видео) / 1046 */
+
+}
+.whoweare__video iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
 }
 .whoweare__content {
+	flex: 1 1 auto;
+	padding: 0 0 0 121px;
 }
 .whoweare__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 142%;  /*line-height из шаблона 57px / размер шрифта 40px */
+	letter-spacing: 0.2;
 }
 .whoweare__text {
+	color: #737373;
+	letter-spacing: 0.2;
 }
 .whoweare__items {
 }
@@ -528,6 +548,12 @@ body {
 .item-whoweare__body {
 }
 .item-whoweare__title {
+	font-size: 16px;
+	letter-spacing: 0.1;
+	line-height: calc(24/16*100%);
 }
 .item-whoweare__text {
+	color: #737373;
+	letter-spacing: 0.2;
+	line-height: calc(24/14*100%);
 }
